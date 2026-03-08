@@ -1,0 +1,151 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#0f0f14;
+color:white;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:20px;
+text-align:center;
+}
+
+/* LOGO */
+
+.logo{
+width:140px;
+margin-bottom:20px;
+}
+
+/* HERO */
+
+.hero{
+background:linear-gradient(135deg,#141421,#1f2a44);
+padding:120px 20px;
+}
+
+/* H1 COM FONTE ESTILIZADA */
+
+.hero h1{
+font-family:'Bebas Neue', sans-serif;
+font-size:64px;
+letter-spacing:2px;
+color:#ffcc00;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+/* BOTÃO */
+
+.cta{
+display:inline-block;
+background:#25D366;
+padding:16px 40px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+border-radius:8px;
+transition:0.3s;
+}
+
+.cta:hover{
+transform:scale(1.05);
+background:#1ebe5b;
+}
+
+/* SECTIONS */
+
+.section{
+padding:90px 20px;
+}
+
+.section h2{
+font-size:36px;
+margin-bottom:20px;
+color:#ffcc00;
+}
+
+/* BENEFITS */
+
+.benefits{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.card{
+background:#1b1b2c;
+padding:35px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+color:#ffcc00;
+margin-bottom:10px;
+}
+
+/* PROMO */
+
+.promo{
+padding:100px 20px;
+background:#0f0f14;
+}
+
+.promo-image{
+width:100%;
+max-width:500px;
+border-radius:15px;
+transition:0.4s;
+}
+
+.promo-image:hover{
+transform:scale(1.05);
+}
+
+.promo-click{
+margin-top:15px;
+font-size:16px;
+opacity:0.8;
+}
+
+/* FOOTER */
+
+footer{
+background:#000;
+padding:40px;
+margin-top:60px;
+}
+
+.footer-content p{
+margin:6px 0;
+}
+
+/* ANIMAÇÃO SCROLL */
+
+.reveal{
+opacity:0;
+transform:translateY(60px);
+transition:1s;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
