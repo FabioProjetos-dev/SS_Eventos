@@ -149,3 +149,47 @@ transition:1s;
 opacity:1;
 transform:translateY(0);
 }
+
+
+
+
+/* GALERIA DE IMAGENS */
+
+.image-gallery{
+
+display:flex;
+align-items: center;
+justify-content: center;
+margin: auto;
+flex-wrap: wrap;
+max-width: 800px;
+grid-template-columns:repeat(2, 1fr);
+gap:25px;
+margin-top:40px;
+
+}
+
+.image-gallery img{
+
+width:100%;
+border-radius:18px;
+object-fit:cover;
+transition:0.4s;
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+max-width: 300px;
+
+}
+
+.image-gallery img:hover{
+
+transform:scale(1.05);
+
+}
+
+@media (max-width:768px){
+
+.image-gallery{
+grid-template-columns:1fr;
+}
+
+}
